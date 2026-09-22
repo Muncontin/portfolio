@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,80 +9,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-    <div class="header">
-        <h1>Mun Tat Tan</h1>
-        <p>Aspiring Software Developer | Linux Enthusiast | Possibly a farmer in this job market</p>
-    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Mun Tat Tan</h1>
+            <p>Aspiring Software Developer | Linux Enthusiast | Open source believer </p>
+        </div>
 
-    <div class="projects">
-        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+            <h2 class="section-title">Projects</h2>
 
-        <a href="https://github.com/Muncontin/iotproj" target="_blank" class="project-item-link">
             <div class="project-item">
-                <strong class="project-title">Multi Protocol Mesh Network</strong><br>
-                Designed a TTGO-based IoT mesh using LoRa, MQTT, and BLE with dynamic routing and protocol selection.
+                <strong class="project-title">Homelab</strong>
+                <span style="color:#5E81AC;">(Private Repo)</span><br>
+                A self-hosted infrastructure stack replacing third-party cloud, DNS, VPN, git, and search
+                services — deployed on Docker and managed through an idempotent Ansible pipeline for
+                one-command redeployment. Currently running 10+ service stacks across 20+ containers,
+                continuously maintained and expanded.
+                <ul class="project-stack-list">
+                    <li><a href="https://adguard.com/en/adguard-home/overview.html" target="_blank">AdGuard Home</a> —
+                        network-wide ad and tracker blocking</li>
+                    <li><a href="https://www.wireguard.com/" target="_blank">WireGuard</a> — VPN for privacy and secure
+                        remote access</li>
+                    <li><a href="https://nginxproxymanager.com/" target="_blank">Nginx Proxy Manager</a> — reverse proxy
+                        and TLS termination</li>
+                    <li><a href="https://nextcloud.com/" target="_blank">Nextcloud</a> — self-hosted cloud storage</li>
+                    <li><a href="https://forgejo.org/" target="_blank">Forgejo</a> — self-hosted git hosting</li>
+                    <li><a href="https://searx.space/" target="_blank">SearXNG</a> — self-hosted, privacy-respecting
+                        search</li>
+                </ul>
             </div>
-        </a>
 
-        <div class="project-item">
-            <strong class="project-title">Earthquake Aftershock Prediction</strong> 
-            <span style="color:#5E81AC;">(Private Repo)</span><br>
-            Real-time seismic analysis system using AWS EC2, Kafka, and Kubernetes to trigger AI-based alerts.
+            <a href="https://github.com/Muncontin/YOUR-REPO-NAME" target="_blank" class="project-item-link">
+                <div class="project-item">
+                    <strong class="project-title">Diagram-to-IaC</strong>
+                    <span style="color:#5E81AC;">(Private Repo)</span><br>
+                    A React tool that converts drag-and-drop cloud architecture diagrams into deployable Terraform HCL.
+                    Built with <a href="https://reactflow.dev/" target="_blank">ReactFlow</a> for its native
+                    parent-child
+                    node support, allowing security groups and VPCs to visually contain their member resources.
+                    <ul class="project-stack-list">
+                        <li>EC2 — instance type customization</li>
+                        <li>S3 — configurable storage size</li>
+                        <li>VPC — region selection</li>
+                        <li>IAM — role and policy configuration</li>
+                        <li>Security Groups — nested membership via drag-and-drop</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="https://github.com/Muncontin/iotproj" target="_blank" class="project-item-link">
+                <div class="project-item">
+                    <strong class="project-title">Multi Protocol Mesh Network</strong><br>
+                    Designed a TTGO-based IoT mesh using LoRa, MQTT, and BLE with dynamic routing and protocol
+                    selection.
+                </div>
+            </a>
+
+            <div class="project-item">
+                <strong class="project-title">Earthquake Aftershock Prediction</strong>
+                <span style="color:#5E81AC;">(Private Repo)</span><br>
+                Real-time seismic analysis system using AWS EC2, Kafka, and Kubernetes to trigger AI-based alerts.
+            </div>
+
+            <div class="project-item">
+                <strong class="project-title">Shimane Kyanpu</strong>
+                <span style="color:#5E81AC;">(Private Repo)</span><br>
+                Android app that highlights camping sites and local attractions in Japan’s Shimane prefecture.
+            </div>
         </div>
 
-        <div class="project-item">
-            <strong class="project-title">Shimane Kyanpu</strong> 
-            <span style="color:#5E81AC;">(Private Repo)</span><br>
-            Android app that highlights camping sites and local attractions in Japan’s Shimane prefecture.
+
+        <div class="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skill-item">
+                <div><strong>Programming Languages:</strong></div>
+                <div>Python, Kotlin, C, Java, JavaScript, TypeScript, SQL</div>
+            </div>
+
+            <div class="skill-item">
+                <div><strong>Networking and APIs:</strong></div>
+                <div>REST (HTTP), WebSockets, MQTT, BLE, LoRa, gRPC</div>
+            </div>
+
+            <div class="skill-item">
+                <div><strong>Databases:</strong></div>
+                <div>MySQL, SQLite, Firebase, MongoDB</div>
+            </div>
+
+            <div class="skill-item">
+                <div><strong>Development Tools:</strong></div>
+                <div>Docker, Kubernetes, Android Studio, Terraform, Ansible</div>
+            </div>
+
+            <div class="skill-item">
+                <div><strong>Operating Systems:</strong></div>
+                <div>Linux (Debian-based/RHEL/Arch distros), Windows</div>
+            </div>
         </div>
-    </div>
-
-
-    <div class="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skill-item">
-            <div><strong>Programming Languages:</strong></div>
-            <div>Python, Kotlin, C, C++, Java, JavaScript, TypeScript, SQL</div>
-        </div>
-
-        <div class="skill-item">
-            <div><strong>Network Protocols:</strong></div>
-            <div>REST, WebSockets, MQTT, BLE, LoRa, gRPC</div>
-        </div>
-
-        <div class="skill-item">
-            <div><strong>Databases:</strong></div>
-            <div>MySQL, SQLite, Firebase, MongoDB</div>
-        </div>
-
-        <div class="skill-item">
-            <div><strong>Development Tools:</strong></div>
-            <div>Docker, Kubernetes, Git, FreeRTOS, Android Studio</div>
-        </div>
-
-        <div class="skill-item">
-            <div><strong>Operating Systems:</strong></div>
-            <div>Linux (Debian-based and Arch distros), Windows</div>
-        </div>
-    </div>
 
 
 
-    <div class="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-item">Email: muntattan@gmail.com</div>
-        <div class="contact-item">
-            GitHub: <a href="https://github.com/Muncontin" target="_blank" style="color: #88C0D0;">github.com/Muncontin</a>
-        </div>
-        <div class="contact-item">
-            LinkedIn: <a href="https://www.linkedin.com/in/mun-tat-tan/" target="_blank" style="color: #88C0D0;">linkedin.com/in/mun-tat-tan</a>
-        </div>
-        <div class="contact-item">
-            <a href="resume.pdf" download style="
+        <div class="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-item">Email: <a href="mailto:muntattan@toot-net.com">muntattan@toot-net.com</a></div>
+            <div class="contact-item">
+                GitHub: <a href="https://github.com/Muncontin" target="_blank"
+                    style="color: #88C0D0;">github.com/Muncontin</a>
+            </div>
+            <div class="contact-item">
+                LinkedIn: <a href="https://www.linkedin.com/in/mun-tat-tan/" target="_blank"
+                    style="color: #88C0D0;">linkedin.com/in/mun-tat-tan</a>
+            </div>
+            <div class="contact-item">
+                <a href="resume.pdf" download style="
                 background-color: #5E81AC;
                 color: #ECEFF4;
                 padding: 10px 20px;
@@ -89,18 +133,19 @@
                 border-radius: 5px;
                 display: inline-block;
             ">
-                📄 Download My Resume
-            </a>
+                    📄 Download My Resume
+                </a>
+            </div>
         </div>
+
+
+
     </div>
 
-
-
-</div>
-
-<div class="footer">
-    © 2025 Mun Tat Tan
-</div>
+    <div class="footer">
+        © 2025 Mun Tat Tan
+    </div>
 
 </body>
+
 </html>
